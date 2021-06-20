@@ -1,14 +1,14 @@
-<svg width="418" height="414" viewBox="0 0 418 414" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="407" height="366" viewBox="0 0 407 366" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0)">
 <g opacity="0.4" filter="url(#filter0_d)">
-<rect x="-435.745" y="311.104" width="816.609" height="252" rx="100" transform="rotate(-19.8208 -435.745 311.104)" fill="white"/>
+<rect width="660.151" height="214.719" rx="100" transform="matrix(0.932935 -0.360046 0.319032 0.947744 -331.446 259.676)" fill="white"/>
 </g>
 <g filter="url(#filter1_d)">
-<rect x="-521" y="246.896" width="816.609" height="252" rx="100" transform="rotate(-19.8208 -521 246.896)" fill="white"/>
+<rect width="660.151" height="214.719" rx="100" transform="matrix(0.932935 -0.360046 0.319032 0.947744 -403 191.684)" fill="white"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_d" x="-453.745" y="16.2083" width="913.679" height="573.967" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d" x="-322.873" y="33.36" width="691.235" height="442.446" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dx="12" dy="12"/>
@@ -17,7 +17,7 @@
 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
-<filter id="filter1_d" x="-539" y="-48" width="913.679" height="573.967" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d" x="-394.428" y="-34.6315" width="691.235" height="442.446" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
 <feOffset dx="12" dy="12"/>
@@ -27,7 +27,7 @@
 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
 </filter>
 <clipPath id="clip0">
-<rect width="418" height="414" fill="white"/>
+<rect width="407" height="366" fill="white"/>
 </clipPath>
 </defs>
 </svg>

@@ -16,7 +16,7 @@ const Home = () => {
                           <img src="asset/images/logo.svg" alt="logo" />
                       </div>
                       <div className="center-app-name">
-                          <img src="asset/images/app-name.svg" alt="app-name" />
+                          <img src="asset/images/app-name.svg" className="center-app-name-logo" alt="app-name" />
                       </div>
                       <div className="center-about-app">
                           <p>

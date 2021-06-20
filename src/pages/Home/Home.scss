@@ -1,5 +1,4 @@
 .home {
-    background-color: #186296;
     height: 100vh;
 }
 
@@ -34,7 +33,10 @@
         font-size: 50px;
         color: white;
         font-weight: bold;
-        font-family: "quicksand";        
+        font-family: "quicksand";
+        justify-content: center;
+        align-items: center;
+        display: flex;        
     }
 
     &-about-app {
@@ -50,8 +52,8 @@
         background-color: white;
         border-radius: 10px;
         font-family: "quicksand";
-        font-size: 30px;
-        padding: 8px 50px;
+        font-size: 25px;
+        padding: 6px 35px;
         border: none;
     }
 
@@ -64,5 +66,31 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    margin-top: -21%;    
+    margin-top: -12.8%;    
+}
+
+//browser is 600px or smaller
+@media only screen and (max-width: 800px) {
+    .footer {
+        display: none;
+    }
+
+    .header {
+
+        &-bg-1 {
+            display: none;
+        }
+    }
+
+    .center {
+        &-about-app {
+            width: 70%;
+        }
+
+        &-app-name {
+            &-logo {
+                width: 70%;
+            }
+        }
+    }
 }
