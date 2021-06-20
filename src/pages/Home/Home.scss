@@ -1,0 +1,68 @@
+.home {
+    background-color: #186296;
+    height: 100vh;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &-bg-1 {
+        margin-top: -5%;
+    }
+
+    &-element {
+        color: white;
+        font-size: 25px;
+        font-family: "quicksand";
+        margin: 30px;
+        padding-right: 20px;
+    }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-logo {
+        margin-top: -10%;
+    }
+
+    &-app-name {
+        font-size: 50px;
+        color: white;
+        font-weight: bold;
+        font-family: "quicksand";        
+    }
+
+    &-about-app {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        width: 40%;
+        font-family: "quicksand";
+        margin-top: -30px;
+    }
+
+    &-button {
+        background-color: white;
+        border-radius: 10px;
+        font-family: "quicksand";
+        font-size: 30px;
+        padding: 8px 50px;
+        border: none;
+    }
+
+    &-button:hover {
+        cursor: pointer;
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: -21%;    
+}
