@@ -1,0 +1,130 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(64, 64, 64, 0.3);
+
+    &-buttons {
+        margin-left: 5px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 10%;
+        
+        &-run {
+            border: none;
+            background-color: white;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-family: "quicksand";
+            font-size: 20px;
+            font-weight: bold;
+            padding: 8px 20px;
+        }
+
+        &-choose {
+            border: none;
+            background: transparent;
+            font-family: "quicksand";
+            font-size: 20px;
+            padding: 8px 20px;
+            color: white;
+        }
+
+        &-option {
+            color: black !important;
+        }
+
+        &-choose:hover {
+            cursor: pointer;
+        }
+    }
+
+    &-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-family: "quicksand";
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: 2px;
+
+        &-img {
+            height: 50px;
+            width: 100px;
+        }
+
+        &-app-name {
+            height: 70px;
+            width: 100px;
+        }
+    }
+}
+
+.area {
+    height: 65vh;
+}
+
+.i-o {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 28.5vh;
+
+    &-input {
+        width: 50%;
+
+        &-head {
+            background-color: rgba(158, 57, 57, 0.1);
+            height: 5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &-head p {
+            margin-left: 3%;
+            color: white;
+            font-family: "quicksand";
+            font-size: 30px;
+        }
+    }
+
+    &-output {
+        width: 50%;
+
+        &-head {
+            background-color: rgba(158, 57, 57, 0.1);
+            height: 5vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        &-head p {
+            margin-left: 3%;
+            color: white;
+            font-family: "quicksand";
+            font-size: 30px;
+        }
+    }
+}
+
+.textarea {
+    resize: none;
+    background-color: rgba(158, 57, 57, 0.3);
+    color: white;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.textarea::placeholder {
+    font-family: "quicksand";
+    font-size: 20px;
+    color: white;
+}
