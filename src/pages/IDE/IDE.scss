@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(64, 64, 64, 0.3);
+    height: 11vh;
 
     &-buttons {
         margin-left: 5px;
@@ -62,6 +63,14 @@
             width: 100px;
         }
     }
+
+    &-music-player {
+        display: flex;
+        // margin: auto;
+        margin-right: 10%;
+        width: 34%;
+        margin-top: 6px;
+    }
 }
 
 .area {
@@ -79,6 +88,7 @@
 
         &-head {
             background-color: rgba(158, 57, 57, 0.1);
+            // background-color: rgba(5, 5, 5, 0.7);
             height: 5vh;
             display: flex;
             flex-direction: row;
@@ -99,6 +109,7 @@
 
         &-head {
             background-color: rgba(158, 57, 57, 0.1);
+            // background-color: rgba(5, 5, 5, 0.7);
             height: 5vh;
             display: flex;
             flex-direction: row;

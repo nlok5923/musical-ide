@@ -1,10 +1,11 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 import "./IDE.scss";
 import MonacoEditor from 'react-monaco-editor';
+import Player from '../../components/Player/index'
 
 const IDE = () => {
 
-    const [code, setCode] = useState(
+    const [code] = useState(
         `function add(a, b) {\n  return a + b;\n}`
       );
 
@@ -42,7 +43,7 @@ const IDE = () => {
           />
         </div>
         <div className="nav-music-player">
-          <button>test</button>
+          <Player />
         </div>
       </div>
       <div
@@ -77,7 +78,7 @@ const IDE = () => {
         width="100%"
         height="500"
         language="cpp"
-        theme="vs"
+        theme="vs-dark"
         value={code}
         options={options}
         // onChange={::this.onChange}
