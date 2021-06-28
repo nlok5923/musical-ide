@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(64, 64, 64, 0.3);
-    height: 11vh;
+    height: 7vh;
 
     &-buttons {
         margin-left: 5px;
@@ -138,4 +138,9 @@
     font-family: "quicksand";
     font-size: 20px;
     color: white;
+}
+
+.draggable-player {
+    z-index: 9999;
+    width: 100vw;
 }

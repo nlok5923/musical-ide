@@ -8,10 +8,10 @@ function Controls(props) {
             <button className="skip-btn" onClick={() => props.SkipSong(false)}>
                 <FontAwesomeIcon icon={faBackward} />
             </button>
-            <button className="play-btn" onClick={() => props.setIsPlaying(!props.isPlaying)}>
+            <button className="play-btn" onClick={() => props.play()}>
                 <FontAwesomeIcon icon={props.isPlaying ? faPause : faPlay} />
             </button>
-            <button className="skip-btn" onClick={() => props.SkipSong()}>
+            <button className="skip-btn" onClick={() => props.SkipSong(true)}>
                 <FontAwesomeIcon icon={faForward} />
             </button>
         </div>

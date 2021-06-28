@@ -1,21 +1,19 @@
 import { React, useState } from "react";
 import "./IDE.scss";
-import MonacoEditor from 'react-monaco-editor';
-import Player from '../../components/Player/index'
+import MonacoEditor from "react-monaco-editor";
+import Player from "../../components/Player/index";
+import Draggable from "react-draggable";
 
 const IDE = () => {
+  const [code] = useState(`function add(a, b) {\n  return a + b;\n}`);
 
-    const [code] = useState(
-        `function add(a, b) {\n  return a + b;\n}`
-      );
-
-      const options = {
-        selectOnLineNumbers: true,
-        colorDecorators: true,
-        cursorStyle: "line-thin",
-        folding: true,
-        foldingHighlight: true
-      }; 
+  const options = {
+    selectOnLineNumbers: true,
+    colorDecorators: true,
+    cursorStyle: "line-thin",
+    folding: true,
+    foldingHighlight: true,
+  };
 
   return (
     <div>
@@ -43,7 +41,16 @@ const IDE = () => {
           />
         </div>
         <div className="nav-music-player">
-          <Player />
+          <Draggable
+            bounds={{ top: -100, left: -1400, right: 140, bottom: 1000 }}
+            grid={[25, 25]}
+            handle=".handle"
+            scale={1}
+          >
+            <div className="draggable-player handle">
+              <Player />
+            </div>
+          </Draggable>
         </div>
       </div>
       <div
@@ -52,10 +59,9 @@ const IDE = () => {
           backgroundImage: `url("asset/images/bg.png")`,
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-        }} 
+        }}
       >
-
-{/* constructor(props) {
+        {/* constructor(props) {
     super(props);
     this.state = {
       code: '// type your code...',
@@ -73,20 +79,19 @@ const IDE = () => {
     const options = {
       selectOnLineNumbers: true
     }; */}
-    {/* // return ( */}
-      <MonacoEditor
-        width="100%"
-        height="500"
-        language="cpp"
-        theme="vs-dark"
-        value={code}
-        options={options}
-        // onChange={::this.onChange}
-        // editorDidMount={::this.editorDidMount}
-      />
-    {/* // ); */}
-  {/* // } */}
-
+        {/* // return ( */}
+        <MonacoEditor
+          width="100%"
+          height="500"
+          language="cpp"
+          theme="vs-dark"
+          value={code}
+          options={options}
+          // onChange={::this.onChange}
+          // editorDidMount={::this.editorDidMount}
+        />
+        {/* // ); */}
+        {/* // } */}
       </div>
       <div className="i-o">
         <div className="i-o-input">

@@ -1,23 +1,12 @@
 body, html {
   margin: 0;
   padding: 0;
+  background-color: #186296;
 }
 
 .components {
   background-color: #186296;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Fira Sans", sans-serif;
-}
-/*
-body {
-  background-color: #DDD;
-}
-*/
 
 .music-player {
   border: 2px solid rgb(192,192,192); 
@@ -30,7 +19,7 @@ body {
 .m-player {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  // width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
@@ -41,6 +30,16 @@ body {
     color: white;
     margin-left: 50px;
     font-family: "quicksand";
+  }
+
+  &-choose {
+    border: none;
+    background: transparent;
+    font-family: "quicksand";
+    font-size: 15px;
+    padding: 8px 20px;
+    color: white; 
+    // width: 10%;   
   }
 }
 
@@ -56,10 +55,6 @@ body {
   width: 30%;
 }
 
-.App {
-  width: 100%;
-}
-
 .c-player > p {
   color: #AAA;
   font-size: 14px;
@@ -71,34 +66,7 @@ body {
 .c-player > p span {
   font-weight: 400;
 }
-/*
-.c-player--details .details-img {
-  position: relative;
-  width: fit-content;
-  margin: 0 auto;
-}
 
-.c-player--details .details-img img {
-  display: block;
-  margin: 50px auto;
-  width: 100%;
-  max-width: 250px;
-  border-radius: 50%;
-  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.8), -6px -6px 12px rgba(255, 255, 255, 0.4);
-}
-
-.c-player--details .details-img:after {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -25px;
-  left: -25px;
-  right: -25px;
-  bottom: -25px;
-  border-radius: 50%;
-  border: 3px dashed rgba(255, 206, 0, 1);
-}
-/*/
 .c-player--details .details-title {
   color: #EEE;
   font-size: 15px;
