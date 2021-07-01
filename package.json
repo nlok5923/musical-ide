@@ -18,6 +18,7 @@
     "react-dom": "^17.0.2",
     "react-draggable": "^4.4.3",
     "react-jinke-music-player": "^4.24.1",
+    "react-loader-spinner": "^4.0.0",
     "react-monaco-editor": "^0.43.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
