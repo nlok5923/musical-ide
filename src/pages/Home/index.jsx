@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -33,7 +34,9 @@ const Home = () => {
               aspernatur aut odit aut fugit, s
             </p>
           </div>
+          <NavLink to="/ide">
           <button className="center-button">Start</button>
+          </NavLink>
         </div>
         <div className="footer">
           <img src="asset/images/bg-img-2.svg" alt="bg-2" />
