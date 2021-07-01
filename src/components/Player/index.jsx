@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from "react";
+import { React } from "react";
 import "./Player.scss";
 import ReactJkMusicPlayer from "react-jinke-music-player";
 import "react-jinke-music-player/assets/index.css";
@@ -19,13 +19,11 @@ const MusicPlayer = () => {
     },
   ];
 
-  return (<div 
-  className="App">
-     <ReactJkMusicPlayer
-        audioLists={audioLists}
-        autoPlay={true}
-      />
-  </div>);
+  return (
+    <div className="App">
+      <ReactJkMusicPlayer audioLists={audioLists} autoPlay={true} />
+    </div>
+  );
 };
 
 export default MusicPlayer;

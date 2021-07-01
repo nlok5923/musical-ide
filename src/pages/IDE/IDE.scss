@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: space-around;
         gap: 10%;
-        
+
         &-run {
             border: none;
             background-color: white;
@@ -28,8 +28,8 @@
             border: none;
             background: transparent;
             font-family: "quicksand";
-            font-size: 3vmin;
-            padding: 8px 20px;
+            font-size: 2.5vmin;
+            padding: 8px 10px;
             color: white;
         }
 
@@ -67,7 +67,7 @@
     &-music-player {
         display: flex;
         // margin: auto;
-        width: 10%;
+        width: 20%;
         margin-top: 6px;
     }
 }
@@ -144,4 +144,5 @@
 .draggable-player {
     z-index: 9999;
     width: 100vw;
+    margin: auto;
 }
