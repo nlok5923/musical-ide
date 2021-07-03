@@ -113,9 +113,6 @@ const IDE = () => {
             <option className="nav-buttons-option" value={48}>
               C (GCC 7.4.0)
             </option>
-            {/* <option className="nav-buttons-option" value={63}> */}
-              {/* JavaScript (Node.js 12.14.0) */}
-            {/* </option> */}
             <option className="nav-buttons-option" value={46}>
               Bash
             </option>
