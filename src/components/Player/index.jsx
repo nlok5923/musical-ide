@@ -6,16 +6,28 @@ import "react-jinke-music-player/assets/index.css";
 const MusicPlayer = () => {
   const audioLists = [
     {
-      name: "Despacito",
-      singer: "Luis Fonsi",
-      cover: "./asset/images/song-1.jpg",
-      musicSrc: "http://localhost:5000/track/60dc0b1d4239615608620f67?",
+      name: "Such a wore",
+      singer: "Jivla",
+      cover: "./asset/images/wore.jpg",
+      musicSrc: "https://save-and-play.herokuapp.com/track/60dc071a4239615608620f44?",
+    },
+    {
+      name: "Some thing just like this",
+      singer: "Unknown",
+      cover: "./asset/images/like-this.png",
+      musicSrc: "https://save-and-play.herokuapp.com/track/5fe0c2b8211ba200043bbe55?",
+    },
+    {
+      name: "Satisfy",
+      singer: "Imran Khan",
+      cover: "./asset/images/satisfy.jpeg",
+      musicSrc: "https://save-and-play.herokuapp.com/track/60dc0b0e4239615608620f54?",
     },
     {
       name: "Despacito",
       singer: "Luis Fonsi",
-      cover: "./asset/images/song-3.jpg",
-      musicSrc: "http://localhost:5000/track/60dc0b1d4239615608620f67?",
+      cover: "./asset/images/despacito.jpg",
+      musicSrc: "https://save-and-play.herokuapp.com/track/5fe0c186211ba200043bbe4a?",
     },
   ];
 
