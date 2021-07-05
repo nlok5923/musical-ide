@@ -14,6 +14,36 @@ const IDE = () => {
   const [input, setInput] = useState("test");
   const [output, setOutput] = useState("");
   const [isLoading, setisLoading] = useState(false);
+  const [language, setLanguageName] = useState('cpp');
+  const [theme, setTheme] = useState('vs-dark');
+  const Languages = [
+    {
+      id: "71",
+      name: "python",
+    },
+    {
+      id: "62",
+      name: "java",
+    },
+    {
+      id: "52",
+      name: "cpp",
+    },
+    {
+      id: "48",
+      name: "cpp",
+    },
+  ];
+
+  const setLanguageConfig = (lang) => {
+    setLanguage(lang);
+    let selectedLanguage = Languages.filter((ele) => ele.id === lang)
+    setLanguageName(selectedLanguage.name);
+  };
+
+  const setEditorTheme = (theme) => {
+    setTheme(theme);
+  };
 
   const options = {
     selectOnLineNumbers: true,
@@ -99,7 +129,7 @@ const IDE = () => {
           </button>
           <select
             className="nav-buttons-choose"
-            onChange={(e) => setLanguage(e.target.value)}
+            onChange={(e) => setLanguageConfig(e.target.value)}
           >
             <option className="nav-buttons-option" value={71}>
               Python (3.8.1)
@@ -113,8 +143,16 @@ const IDE = () => {
             <option className="nav-buttons-option" value={48}>
               C (GCC 7.4.0)
             </option>
-            <option className="nav-buttons-option" value={46}>
-              Bash
+          </select>
+          <select
+            className="nav-buttons-choose"
+            onChange={(e) => setEditorTheme(e.target.value)}
+          >
+            <option className="nav-buttons-option" value="vs-dark">
+              Dark
+            </option>
+            <option className="nav-buttons-option" value="vs-light">
+              Light
             </option>
           </select>
         </div>
@@ -144,8 +182,8 @@ const IDE = () => {
         <MonacoEditor
           width="100%"
           height="500"
-          language="cpp"
-          theme="vs-dark"
+          language={language}
+          theme={theme}
           value={code}
           options={options}
           automaticLayout={true}
