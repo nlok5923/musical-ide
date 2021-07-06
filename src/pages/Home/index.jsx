@@ -27,11 +27,10 @@ const Home = () => {
           </div>
           <div className="center-about-app">
             <p>
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, s
+              This is the unique online IDE (intergrated development enviroment) which is 
+              integrated with music players and also offers support for compilation and run time 
+              execution of several languages such as C++, python, Java, C code. This IDE is integrated 
+              with a music player which enables your to hear your favourite songs at the moment you were coding. 
             </p>
           </div>
           <NavLink to="/ide">
