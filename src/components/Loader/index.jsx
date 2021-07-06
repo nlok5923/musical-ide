@@ -5,8 +5,8 @@ import './Loader.scss'
 const LoaderComponent = () => {
     return (
       <Loader
-        type="Oval"
-        color="#00BFFF"
+        type="Bars"
+        color="white"
         height={30}
         width={30}
       />

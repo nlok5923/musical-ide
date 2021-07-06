@@ -67,12 +67,17 @@
     &-music-player {
         display: flex;
         width: 20%;
-        margin-top: 6px;
+        margin-right: 2%;
+        margin-top: 15px;
     }
 }
 
 .area {
     height: 65vh;
+}
+
+.toggle-button {
+    padding-top: 10px;
 }
 
 .i-o {
@@ -140,7 +145,5 @@
 }
 
 .draggable-player {
-    z-index: 9999;
-    width: 100vw;
     margin: auto;
 }

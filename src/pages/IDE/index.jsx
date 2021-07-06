@@ -5,17 +5,19 @@ import Player from "../../components/Player/index";
 import Draggable from "react-draggable";
 import axios from "axios";
 import Loader from "../../components/Loader/index";
-import { useAlert } from 'react-alert'
+import { useAlert } from "react-alert";
+import DarkModeToggle from "react-dark-mode-toggle";
 
 const IDE = () => {
-  const alert = useAlert()
+  const alert = useAlert();
   const [code, setCode] = useState(`Enter your code here`);
   const [languageId, setLanguage] = useState(0);
   const [input, setInput] = useState("test");
   const [output, setOutput] = useState("");
   const [isLoading, setisLoading] = useState(false);
-  const [language, setLanguageName] = useState('cpp');
-  const [theme, setTheme] = useState('vs-dark');
+  const [language, setLanguageName] = useState("cpp");
+  const [theme, setTheme] = useState("vs-dark");
+  const [checked, isChecked] = useState(false);
   const Languages = [
     {
       id: "71",
@@ -37,11 +39,14 @@ const IDE = () => {
 
   const setLanguageConfig = (lang) => {
     setLanguage(lang);
-    let selectedLanguage = Languages.filter((ele) => ele.id === lang)
+    let selectedLanguage = Languages.filter((ele) => ele.id === lang);
+    console.log(selectedLanguage);
     setLanguageName(selectedLanguage.name);
   };
 
-  const setEditorTheme = (theme) => {
+  const setEditorTheme = () => {
+    isChecked(!checked);
+    const theme = (checked) ? "vs-dark" : "vs-light" ; 
     setTheme(theme);
   };
 
@@ -72,7 +77,7 @@ const IDE = () => {
   const handleSubmit = async () => {
     try {
       setisLoading(true);
-      alert.success('Submitted Successfully');
+      alert.success("Submitted Successfully");
       let token = "";
       axios
         .request(judgeOptions)
@@ -97,26 +102,26 @@ const IDE = () => {
               console.log(resp.data);
               console.log(atob(resp.data.stdout));
               setOutput(atob(resp.data.stdout));
-              alert.success('Ran Successfully');
+              alert.success("Ran Successfully");
               setisLoading(false);
             })
             .catch(function (error) {
               setOutput(error);
-              alert.error('Error occured');
+              alert.error("Error occured");
               setisLoading(false);
               console.error(error);
             });
         })
         .catch((err) => {
           setOutput(err);
-          alert.error('Error occured');
+          alert.error("Error occured");
           setisLoading(false);
-        })
+        });
     } catch (err) {
       console.log(err);
       setOutput(err);
       setisLoading(false);
-      alert.error('Error occured');
+      alert.error("Error occured");
     }
   };
 
@@ -144,17 +149,6 @@ const IDE = () => {
               C (GCC 7.4.0)
             </option>
           </select>
-          <select
-            className="nav-buttons-choose"
-            onChange={(e) => setEditorTheme(e.target.value)}
-          >
-            <option className="nav-buttons-option" value="vs-dark">
-              Dark
-            </option>
-            <option className="nav-buttons-option" value="vs-light">
-              Light
-            </option>
-          </select>
         </div>
         <div className="nav-logo">MUSICAL IDE</div>
         <div className="nav-music-player">
@@ -169,6 +163,11 @@ const IDE = () => {
               {isLoading && <Loader />}
             </div>
           </Draggable>
+          <DarkModeToggle
+            onChange={() => setEditorTheme()}
+            checked={checked}
+            size={60}
+          />
         </div>
       </div>
       <div
@@ -182,7 +181,7 @@ const IDE = () => {
         <MonacoEditor
           width="100%"
           height="500"
-          language={language}
+          language="cpp"
           theme={theme}
           value={code}
           options={options}
