@@ -18,9 +18,12 @@
   
  </p>
 
-
-
+### 👨‍💻 Working 
+<p align="center">
+<img align="center" src="images/working.png" alt="musical ide" />
+ </p>
 <!-- <p align="center"> -->
+
 <!-- <span> -->
  - Made with 💻 by [@nlok5923](https://github.com/nlok5923)
  - Design Credits 🎨 : [@solankidivyam](https://github.com/solankidivyam) 
