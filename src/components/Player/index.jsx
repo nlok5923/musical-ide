@@ -6,12 +6,6 @@ import "react-jinke-music-player/assets/index.css";
 const MusicPlayer = () => {
   const audioLists = [
     {
-      name: "Such a wore",
-      singer: "Jivla",
-      cover: "./asset/images/wore.jpg",
-      musicSrc: "https://save-and-play.herokuapp.com/track/60dc071a4239615608620f44?",
-    },
-    {
       name: "Some thing just like this",
       singer: "Unknown",
       cover: "./asset/images/like-this.png",
