@@ -31,5 +31,3 @@
 <!-- <span> -->
  - Made with 💻 by [@nlok5923](https://github.com/nlok5923)
  - Design Credits 🎨 : [@solankidivyam](https://github.com/solankidivyam) 
-
-  <!--   </p>  -->
